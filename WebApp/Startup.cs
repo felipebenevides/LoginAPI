@@ -26,6 +26,19 @@ namespace WebApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddSwaggerGen(c => {
+                c.SwaggerDoc("v1",
+                  new Info{
+                      Title = "Login API",
+                      Version = "v1",
+                      Description = "Api De Login com JWT"
+                      Contact = new Contact{
+                          Name = "Felipe Benevides",
+                          URL = "http://www.linkedin.com/eng-felipebenevides"
+                      }
+                  });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,6 +58,12 @@ namespace WebApp
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+             // Ativando middlewares para uso do Swagger
+            app.UseSwagger();
+            app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Login API V1");
             });
         }
     }
