@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 
 namespace WebApp
 {
@@ -29,13 +30,15 @@ namespace WebApp
 
             services.AddSwaggerGen(c => {
                 c.SwaggerDoc("v1",
-                  new Info{
+                  new OpenApiInfo
+                  {
                       Title = "Login API",
                       Version = "v1",
-                      Description = "Api De Login com JWT"
-                      Contact = new Contact{
+                      Description = "Api De Login com JWT",
+                      Contact = new OpenApiContact
+                      {
                           Name = "Felipe Benevides",
-                          URL = "http://www.linkedin.com/eng-felipebenevides"
+                          Url = new Uri("https://www.linkedin.com/in/eng-felipebenevides/")
                       }
                   });
             });
