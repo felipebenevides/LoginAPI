@@ -1,0 +1,8 @@
+C:\Projetos\Estudos\LoginAPI\Services\bin\Debug\netcoreapp3.0\Domain.deps.json
+C:\Projetos\Estudos\LoginAPI\Services\bin\Debug\netcoreapp3.0\Domain.dll
+C:\Projetos\Estudos\LoginAPI\Services\bin\Debug\netcoreapp3.0\Domain.pdb
+C:\Projetos\Estudos\LoginAPI\Services\obj\Debug\netcoreapp3.0\Domain.csprojAssemblyReference.cache
+C:\Projetos\Estudos\LoginAPI\Services\obj\Debug\netcoreapp3.0\Domain.AssemblyInfoInputs.cache
+C:\Projetos\Estudos\LoginAPI\Services\obj\Debug\netcoreapp3.0\Domain.AssemblyInfo.cs
+C:\Projetos\Estudos\LoginAPI\Services\obj\Debug\netcoreapp3.0\Domain.dll
+C:\Projetos\Estudos\LoginAPI\Services\obj\Debug\netcoreapp3.0\Domain.pdb
